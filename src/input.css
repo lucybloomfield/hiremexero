@@ -14,6 +14,14 @@ h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
 }
 
+/* Nav */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 50; /* make sure it's above everything else */
+  padding: 10px !important;
+}
+
 /* Journal Page Layout */
 /* Apply a lined notebook effect to the page sections */
 .page {
@@ -24,7 +32,6 @@ h1, h2, h3 {
       #e0e0e0 30px,  /* Line color */
       #e0e0e0 32px   /* Space between lines (increase this for a larger gap) */
     );
-    margin-bottom: 4rem; /* Add space between sections */
     padding-bottom: 4rem; /* Ensure the content inside doesn't stick to the bottom */
   }
   
@@ -70,7 +77,6 @@ h1, h2, h3 {
   .diagram-container:after {
     content: "";
     position: absolute;
-    background-color: #c8c8c8; /* Grey tape color */
     height: 10px;
     width: 50px;
     z-index: 1;
